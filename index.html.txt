@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GK Manutenção - Links Oficiais</title>
+    <style>
+        :root {
+            --azul-marinho: #001f3f;
+            --amarelo-seguranca: #ffcc00;
+            --branco: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--azul-marinho);
+            color: var(--branco);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            margin: 0;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid var(--amarelo-seguranca);
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+            color: #cccccc;
+            text-align: center;
+        }
+        .links-container {
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .link-button {
+            background-color: var(--amarelo-seguranca);
+            color: var(--azul-marinho);
+            text-decoration: none;
+            padding: 18px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.2s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .link-button:active {
+            transform: scale(0.95);
+        }
+        .emergency {
+            background-color: #d9534f; /* Vermelho para emergência */
+            color: white;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .footer {
+            margin-top: 50px;
+            font-size: 0.8rem;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo ou Foto do Gilleady -->
+    <img src="https://via.placeholder.com/150" alt="GK Manutenção" class="profile-img">
+
+    <h1>GK Manutenção</h1>
+    <p>Especialista em Elétrica e Automação Rural <br> Capanema/PR e Região</p>
+
+    <div class="links-container">
+        
+        <!-- Botão de Emergência -->
+        <a href="https://wa.me/5546999732902?text=EMERGÊNCIA:%20Preciso%20de%20atendimento%20agora!" class="link-button emergency">
+            🚨 PLANTÃO / EMERGÊNCIA 24H
+        </a>
+
+        <a href="https://wa.me/5546999732902?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento." class="link-button">
+            💬 SOLICITAR ORÇAMENTO
+        </a>
+
+        <a href="https://www.instagram.com/gkmanutencaocap/" class="link-button">
+            📸 NOSSO INSTAGRAM
+        </a>
+
+        <a href="https://maps.google.com/?q=Capanema,PR" class="link-button">
+            📍 LOCALIZAÇÃO / ATENDIMENTO
+        </a>
+
+    </div>
+
+    <div class="footer">
+        Desenvolvido por Fluxo Digital 🚀
+    </div>
+
+</body>
+</html>
